@@ -1,3 +1,4 @@
+<img src="trab4.png" alt="">
 
 
 1. O	diagrama	acima	representa	as	classes	de	um aplicativo	de	conversas	por	
