@@ -28,6 +28,18 @@ public class ContaCorrente {
         }
     }
 
+//    public void retirar(double valor){
+//        if(valor > this.saldo){
+//            System.out.println("Você Não possui saldo suficiente");
+//        }else {
+//            System.out.println("VALOR DO SAQUE: " + valor);
+//            System.out.println("VALOR DO RETIRADO: " + valor);
+//            valor = Math.abs(valor);
+//            this.saldo -= valor;
+//        }
+//    }
+
+
     public void dados_conta(){
         System.out.println("ID - " + this.id_conta);
         System.out.println("SALDO - " +this.saldo);

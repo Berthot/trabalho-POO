@@ -5,16 +5,18 @@ public class Mensagem {
     private String texto;
     private Boolean enviado;
 
-    final Boolean ENVIADO = true;
-    final Boolean RECEBIDO = false;
-
     Mensagem(Boolean enviado, String texto){
         this.enviado = enviado;
         this.texto = texto;
     }
 
-    public void imprimir(){
-        System.out.println();
+    public String imprimir(){
+        if(enviado){
+            return "ENVIADO: " + this.texto;
+        }else{
+            return "RECEBIDO " + this.texto;
+        }
     }
+
 
 }

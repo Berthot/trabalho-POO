@@ -5,35 +5,40 @@ import java.util.ArrayList;
 public class Usuario {
     private String nome; // propio usuario
     ArrayList<Conversa> conversas = new ArrayList<>();
-    ArrayList<Usuario> amigos = new ArrayList<>();
 
     Usuario(String nome){
         this.nome = nome;
     }
 
-    public void iniciar_conversa(Conversa contato){
+
+    public void enviarMsg(Usuario contato, String msg){
+        Conversa x = new Conversa(contato.getName());
+        x.salvarMsg(true,msg);
+        conversas.add(x);
+        contato.receberMsg(contato,contato.getName() + ": " + msg);
 
     }
 
-    public void enviar_msg(Conversa contato, String texto){
-        contato.envio();
-
+    public void receberMsg(Usuario remetente, String msg){
+        Conversa x = new Conversa(remetente.getName());
+        x.salvarMsg(false,msg);
+        conversas.add(x);
     }
 
-    public void receber_msg(Conversa remetente, Mensagem msg){
 
+    public boolean msgEmpty(){
+        return conversas.isEmpty();
     }
 
-    public void imprimir_msg(Conversa contato){
-        // imprimir da conversa
-    }
-
-    public void add_user(Usuario user){
-        amigos.add(user);
-
-    }
 
     public String getName(){
         return this.nome;
     }
+
+    public void imprimir(){
+        for(Conversa x: conversas){
+            x.imprimirConversa();
+        }
+    }
+
 }

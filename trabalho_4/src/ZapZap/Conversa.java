@@ -8,21 +8,21 @@ public class Conversa {
     ArrayList<Mensagem> mensagens = new ArrayList<>();
 
     Conversa(String contato){
+
         this.contato = contato;
     }
 
-    public void envio(){
 
-    }
-
-    public void salvar_msg(Boolean status, String msg){
-
+    public void salvarMsg(Boolean status, String msg){
         Mensagem m = new Mensagem(status, msg);
         mensagens.add(m);
+
     }
 
-    public void imprimir_conversa(){
-
+    public void imprimirConversa(){
+        for(Mensagem j: mensagens){
+            System.out.println(j.imprimir());
+        }
     }
 
 }

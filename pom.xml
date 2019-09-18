@@ -6,7 +6,11 @@
 
     <groupId>groupId</groupId>
     <artifactId>trabalhos-poo</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>trabalho_6</module>
+    </modules>
     <dependencies>
         <dependency>
             <groupId>org.apache.commons</groupId>
