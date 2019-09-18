@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class Inicio {
 
-    public static ArrayList<Usuario> contatos = new ArrayList<>();
-    public static Scanner sc = new Scanner(System.in);
+    static ArrayList<Usuario> contatos = new ArrayList<>();
+    static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         int select;
@@ -14,14 +14,13 @@ public class Inicio {
         do{
             showMenu();
             select = Integer.parseInt(sc.next());
-            if(select == 0){
+            if(select != 0){
+                menu(select);
+            }else{
                 continua = false;
-                continue;
             }
-            menu(select);
         }while(continua);
     }
-
 
     public static void criaUsuario(){
         Scanner entrada = new Scanner(System.in);
@@ -30,7 +29,6 @@ public class Inicio {
         Usuario user = new Usuario(entrada.nextLine());
         contatos.add(user);
         System.out.println("----------------------------");
-        System.out.println("                           -");
     }
 
     private String verificaUsuario(Usuario procurar){
@@ -81,7 +79,7 @@ public class Inicio {
     }
 
     public static void mostraMsg(){
-        System.out.println("---------------------------");
+        System.out.println("----------------------------");
         Scanner usu = new Scanner(System.in);
         System.out.println("Insira o Usuario para ver as Conversas: ");
         String u = usu.next();
@@ -93,6 +91,7 @@ public class Inicio {
             }
         }
         x.imprimir();
+        System.out.println("----------------------------");
     }
 
     public static void enviaMsg(){
@@ -126,19 +125,18 @@ public class Inicio {
             msg = x.nextLine();
             usuario42.enviarMsg(reme, msg);
         }
-
-
-
-
+        System.out.println("----------------------------");
     }
 
     public static void temConversa(){
+        System.out.println("----------------------------");
         int acc = 1;
         for(Usuario x: contatos){
             if(!x.msgEmpty()){
                 System.out.println(acc + ". " + x.getName());
             }
         }
+        System.out.println("----------------------------");
     }
 
 }
