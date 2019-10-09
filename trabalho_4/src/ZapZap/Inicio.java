@@ -26,7 +26,7 @@ public class Inicio {
         Scanner entrada = new Scanner(System.in);
         System.out.println("----------------------------");
         System.out.println("Insira o nome do usuario que quer criar: ");
-        String input = entrada.nextLine();
+        String input = entrada.nextLine().toLowerCase();
         if(input.equals("")){
             System.out.println("Insira um usuario valido!");
             System.out.println("----------------------------");
@@ -98,11 +98,11 @@ public class Inicio {
         Scanner usu = new Scanner(System.in);
         String u;
         System.out.println("Insira o Usuario para ver as Conversas: ");
-        u = usu.next();
+        u = usu.next().toLowerCase();
 
         while(verificaUsuario(u)){
             System.out.println("Insira um Usuario Valido para ver as Conversas: ");
-            u = usu.next();
+            u = usu.next().toLowerCase();
         }
         Usuario user;
         user = getUser(u);
@@ -136,7 +136,7 @@ public class Inicio {
         do{
             System.out.println("----------------------------");
             System.out.println("Insira seu Remetente: ");
-            usuario = remete.nextLine();
+            usuario = remete.nextLine().toLowerCase();
             if(acc == 3){
                 end = true;
                 break;
@@ -154,7 +154,7 @@ public class Inicio {
             do {
                 System.out.println("----------------------------");
                 System.out.println("Insira seu Destinatario: ");
-                destinatario = dest.nextLine();
+                destinatario = dest.nextLine().toLowerCase();
                 if(acc == 3){
                     end = true;
                     break;

@@ -20,6 +20,7 @@ public class Conversa {
     }
 
     public void imprimirConversa(){
+        System.out.println(contato);
         for(Mensagem j: mensagens){
             System.out.println(j.imprimir());
         }

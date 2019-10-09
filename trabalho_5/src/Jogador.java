@@ -1,3 +1,5 @@
+
+
 public class Jogador {
     private String nome;
     protected int score;

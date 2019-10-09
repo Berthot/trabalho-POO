@@ -26,7 +26,7 @@ public class EngenheiroCivil {
 
         clovis.mostrar_dados_pessoais();
 
-        Retangulo r = new Retangulo(4.7f, 8.2f);
+        Retangulo r = new Retangulo(4.0f, 8.0f);
         System.out.println("Area: " + r.area());
         System.out.println("Perimetro: " + r.perimetro());
 

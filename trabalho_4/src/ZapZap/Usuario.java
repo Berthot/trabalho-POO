@@ -13,7 +13,7 @@ public class Usuario {
 
     public void enviarMsg(Usuario contato, String msg){
         Conversa x = new Conversa(contato.getNome());
-        x.salvarMsg(true,msg);
+        x.salvarMsg(true,this.nome + ": " + msg);
         conversas.add(x);
         contato.receberMsg(contato,contato.getNome() + ": " + msg);
 
