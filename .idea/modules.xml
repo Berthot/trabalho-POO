@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/trabalho_06/trabalho_06.iml" filepath="$PROJECT_DIR$/trabalho_06/trabalho_06.iml" />
-      <module fileurl="file://$PROJECT_DIR$/trabalho_1/trabalho_1.iml" filepath="$PROJECT_DIR$/trabalho_1/trabalho_1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/trabalho_2/trabalho_2.iml" filepath="$PROJECT_DIR$/trabalho_2/trabalho_2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/trabalho_3/trabalho_3.iml" filepath="$PROJECT_DIR$/trabalho_3/trabalho_3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/trabalho_4/trabalho_4.iml" filepath="$PROJECT_DIR$/trabalho_4/trabalho_4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POO-Login-3/POO-Login-3.iml" filepath="$PROJECT_DIR$/POO-Login-3/POO-Login-3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trab-001/trab-001.iml" filepath="$PROJECT_DIR$/trab-001/trab-001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trab-002/trab-002.iml" filepath="$PROJECT_DIR$/trab-002/trab-002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trab-003/trab-003.iml" filepath="$PROJECT_DIR$/trab-003/trab-003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trab-004/trab-004.iml" filepath="$PROJECT_DIR$/trab-004/trab-004.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trab-005/trab-005.iml" filepath="$PROJECT_DIR$/trab-005/trab-005.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trab-006/trab-006.iml" filepath="$PROJECT_DIR$/trab-006/trab-006.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trab-007/trab-007.iml" filepath="$PROJECT_DIR$/trab-007/trab-007.iml" />
       <module fileurl="file://$PROJECT_DIR$/trabalho_5/trabalho_5.iml" filepath="$PROJECT_DIR$/trabalho_5/trabalho_5.iml" />
-      <module fileurl="file://$PROJECT_DIR$/trabalho_7/trabalho_7.iml" filepath="$PROJECT_DIR$/trabalho_7/trabalho_7.iml" />
       <module fileurl="file://$PROJECT_DIR$/trabalho_8/trabalho_8.iml" filepath="$PROJECT_DIR$/trabalho_8/trabalho_8.iml" />
       <module fileurl="file://$PROJECT_DIR$/trabalhos-poo.iml" filepath="$PROJECT_DIR$/trabalhos-poo.iml" />
     </modules>

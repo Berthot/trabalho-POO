@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 abstract class Personagem {
     static boolean vivo;
     protected float posicao_x = 0;
